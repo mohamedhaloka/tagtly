@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+/// Each text has own color
 class TextColor {
   static const Color none = Colors.black;
   static const Color insta = Color(0xff740ec2);

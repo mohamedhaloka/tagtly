@@ -1,4 +1,3 @@
-// part of 'widgets/tagtly_text_form.dart';
 
 export 'package:tagtly/widgets/tagtly_text_form.dart';
 export 'package:tagtly/widgets/tagtly_text_view.dart';
