@@ -58,6 +58,7 @@ class TagtlyManager {
   /// This method get string and convert it to a list of [TextObj]
   /// use a list into [RichText] widget to show a whole text
   /// get the output of [_addSpacerInContent] and convert it list of [TextObj]
+  ///
   /// output of [_addSpacerInContent] = "[uniqueSpacer]#Hello[uniqueSpacer] Mohamed ,this is my website [uniqueSpacer]https://www.mywebsite.com[uniqueSpacer]"
   /// convert it to normal list [#Hello,Mohamed ,this is my website,https://www.mywebsite.com]
   /// convert normal list to list of [TextObj]
@@ -117,6 +118,7 @@ class TagtlyManager {
   /// This Function add separator key at each unique text in the word
   /// such as [_urlPattern], [_hashtagPattern], [_emailPattern] and more pattern..
   /// explore it below 😄
+  ///
   /// content = "#Hello Mohamed ,this is my website https://www.mywebsite.com"
   /// func output = " [uniqueSpacer] #Hello [uniqueSpacer] Mohamed ,this is my website [uniqueSpacer] https://www.mywebsite.com [uniqueSpacer]"
   static String _addSpacerInContent(String content, RegExp regExp) {
