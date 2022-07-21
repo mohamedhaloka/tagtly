@@ -14,7 +14,7 @@ class TextPartStyleDefinitions {
   RegExp createCombinedPatternBasedOnStyleMap() {
     final String combinedPatternString = definitionList
         .map<String>((TextPartStyleDefinition textPartStyleDefinition) =>
-    textPartStyleDefinition.pattern)
+            textPartStyleDefinition.pattern)
         .join('|');
 
     return RegExp(combinedPatternString, multiLine: true, caseSensitive: false);
@@ -22,7 +22,7 @@ class TextPartStyleDefinitions {
 
   TextPartStyleDefinition? getStyleOfTextPart(String textPart, String text) {
     return List<TextPartStyleDefinition?>.from(definitionList).firstWhere(
-          (TextPartStyleDefinition? styleDefinition) {
+      (TextPartStyleDefinition? styleDefinition) {
         if (styleDefinition == null) return false;
 
         bool hasMatch = false;
@@ -30,7 +30,7 @@ class TextPartStyleDefinitions {
         RegExp(styleDefinition.pattern, caseSensitive: false)
             .allMatches(text)
             .forEach(
-              (RegExpMatch currentMatch) {
+          (RegExpMatch currentMatch) {
             if (hasMatch) return;
 
             if (currentMatch.group(0) == textPart) {

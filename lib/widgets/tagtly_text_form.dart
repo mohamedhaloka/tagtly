@@ -31,7 +31,6 @@ class TagtlyTextField extends StatelessWidget {
       this.keyboardAppearance,
       this.keyboardType,
       this.maxLength,
-      this.maxLengthEnforced = false,
       this.maxLengthEnforcement,
       this.minLines,
       this.obscureText = false,
@@ -67,7 +66,6 @@ class TagtlyTextField extends StatelessWidget {
       showCursor,
       enableInteractiveSelection,
       expands,
-      maxLengthEnforced,
       autofocus;
   final String? obscuringCharacter;
   final InputDecoration? decoration;
@@ -138,7 +136,6 @@ class TagtlyTextField extends StatelessWidget {
           showCursor: showCursor,
           focusNode: focusNode,
           keyboardAppearance: keyboardAppearance,
-          maxLengthEnforced: maxLengthEnforced!,
           scrollController: scrollController,
           maxLengthEnforcement: maxLengthEnforcement,
           scrollPhysics: scrollPhysics,

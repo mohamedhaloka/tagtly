@@ -6,7 +6,7 @@ import '../src/text_obj.dart';
 
 class TagtlyTextView extends StatefulWidget {
   const TagtlyTextView(this.text,
-      {Key? key,required this.onClick, this.normalTextStyle})
+      {Key? key, required this.onClick, this.normalTextStyle})
       : super(key: key);
   final String text;
   final ValueChanged<TextObj>? onClick;
@@ -17,7 +17,6 @@ class TagtlyTextView extends StatefulWidget {
 }
 
 class _TagtlyTextViewState extends State<TagtlyTextView> {
-
   /// We separate whole of text to pieces into list
   List<TextObj> texts = <TextObj>[];
 
