@@ -1,5 +1,5 @@
 name: tagtly
-description: A new Flutter project.
+description: Tagtly package help you to detect a lot of hyperlink text such as.. email, url, social media tags, hashtag and more either when user type in text field or when appear a text read only.
 version: 0.0.1
 homepage: https://github.com/mohamedhaloka/tagtly
 
