@@ -11,7 +11,7 @@ Package help you detects
 
 And we'll add more later..
 
-<img src="https://github.com/favicon.ico" width="120" height="300">
+<img src="https://b.top4top.io/p_2394kad0o1.png" width="270" height="550">
 
 
 ## Usage
