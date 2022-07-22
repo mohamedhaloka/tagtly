@@ -11,7 +11,8 @@ Package help you detects
 
 And we'll add more later..
 
-![](https://b.top4top.io/p_2394kad0o1.png)
+<img src="https://github.com/favicon.ico" width="120" height="300">
+
 
 ## Usage
 - **As Text Field**
