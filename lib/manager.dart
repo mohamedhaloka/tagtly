@@ -150,9 +150,9 @@ class TagtlyManager {
   static RegExp get _hashtagPattern => RegExp("#+($_patternStr+)");
   static RegExp get _urlPattern =>
       RegExp(r'(?:(?:https?|ftp):\/\/)+[\w/\-?=%.]+\.[\w/\-@?;&=%.]+');
-  static RegExp get _timePattern => RegExp(r'([0-1][0-9]|2[0-3]):([0-5][0-9])');
+  static RegExp get _timePattern => RegExp(r'([0-1][0-9]|[٠-١][٠-٩]|2[0-3]||٢[٠-٣]):([0-5][0-9]|[٠-٥][٠-٩])');
   static RegExp get _datePattern => RegExp(
-      '(0[1-9]|1[0-9]|2[0-9]|3[0-1])+[-|.|/]+(0[1-9]|1[0-2])+[-|.|/]+(200[0-9]|201[0-9]|202[0-9])');
+      '(0[1-9]|٠[١-٩]|1[0-9]|١[١-٩]|2[0-9]|٢[٠-٩]|3[0-1]|٣[٠-١])+[-|.|/]+(0[1-9]|٠[١-٩]|1[0-2]|١[٠-٢])+[-|.|/]+(200[0-9]|٢٠٠[٠-٩]|201[0-9]|٢٠١[٠-٩]|202[0-9]|٢٠٢[٠-٩])');
   static RegExp get _emailPattern => RegExp(r'\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b',
       caseSensitive: false, multiLine: true);
   static RegExp get _twitterPattern =>
