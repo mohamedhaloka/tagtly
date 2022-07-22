@@ -1,7 +1,7 @@
 name: tagtly
 description: Tagtly package help you to detect a lot of hyperlink type.
   Can also show hybertext either in view or typeing.
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/mohamedhaloka/tagtly
 
 environment:
