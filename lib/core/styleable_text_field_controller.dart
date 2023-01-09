@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../src/text_part_obj.dart';
+import '../text_part_obj.dart';
 
 /// Custom controller obj extend [TextEditingController]
 /// using to highlight part of text in text field by our patterns

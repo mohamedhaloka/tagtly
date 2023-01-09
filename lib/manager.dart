@@ -3,8 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:tagtly/src/text_color.dart';
 import 'package:tagtly/src/text_enum.dart';
-import 'package:tagtly/src/text_obj.dart';
-import 'package:tagtly/src/text_part_obj.dart';
+import 'package:tagtly/text_obj.dart';
+import 'package:tagtly/text_part_obj.dart';
 
 import 'core/styleable_text_field_controller.dart';
 
