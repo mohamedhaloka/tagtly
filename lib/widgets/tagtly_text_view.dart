@@ -2,7 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import '../manager.dart';
-import '../src/text_obj.dart';
+import '../text_obj.dart';
 
 class TagtlyTextView extends StatefulWidget {
   const TagtlyTextView(this.text,

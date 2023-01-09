@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import '../manager.dart';
 
 class TagtlyTextField extends StatelessWidget {
-  const TagtlyTextField(
+  TagtlyTextField(
       {Key? key,
       this.onChanged,
       this.textInputAction,
@@ -53,8 +53,11 @@ class TagtlyTextField extends StatelessWidget {
       this.textAlignVertical,
       this.textCapitalization = TextCapitalization.none,
       this.toolbarOptions,
-      this.validator})
-      : super(key: key);
+      this.validator,
+      this.controller})
+      : super(key: key) {
+    controller ??= TagtlyManager.controller;
+  }
 
   final Function? onSaved, onEditingComplete, onFieldSubmitted;
   final GestureTapCallback? onTap;
@@ -101,6 +104,7 @@ class TagtlyTextField extends StatelessWidget {
   final TextAlignVertical? textAlignVertical;
   final MaxLengthEnforcement? maxLengthEnforcement;
   final Brightness? keyboardAppearance;
+  TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
@@ -108,7 +112,7 @@ class TagtlyTextField extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(top: 90),
         child: TextFormField(
-          controller: TagtlyManager.controller,
+          controller: controller,
           autocorrect: autocorrect!,
           enableSuggestions: enableSuggestions!,
           onChanged: onChanged,
