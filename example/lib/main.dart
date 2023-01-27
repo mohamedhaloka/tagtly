@@ -41,14 +41,17 @@ class _TagtlyAppState extends State<TagtlyApp> {
       body: Column(
         children: [
           Expanded(
-            child: TagtlyTextField(
-              decoration: const InputDecoration(
-                  hintText: 'Type anything',
-                  contentPadding: EdgeInsets.symmetric(horizontal: 8)),
-              onChanged: (String value) {
-                text = value;
-                setState(() {});
-              },
+            child: Padding(
+              padding: const EdgeInsets.only(top: 90),
+              child: TagtlyTextField(
+                decoration: const InputDecoration(
+                    hintText: 'Type anything',
+                    contentPadding: EdgeInsets.symmetric(horizontal: 8)),
+                onChanged: (String value) {
+                  text = value;
+                  setState(() {});
+                },
+              ),
             ),
           ),
           const Text(
